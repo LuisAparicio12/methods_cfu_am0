@@ -7,7 +7,7 @@
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
 "Hello World".downcase
-
+#The downcase explains that the outcome is "hello world"
 
 "Hello World".include?("Hello")
 
@@ -38,7 +38,8 @@
 # The puts command prints the return value of the start_with? method (true) to the console.
 first_name = "Jeff"
 puts first_name.start_with?("J")
-
+last_name = "Aparicio"
+puts last_name.start_with?("A")
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -46,8 +47,8 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
-
-
+age = 7
+puts age.digits(100)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
