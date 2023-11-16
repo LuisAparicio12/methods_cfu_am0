@@ -55,3 +55,6 @@ puts age.digits(100)
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+ages = [12, 14, 16, 18, 20]
+puts ages.first
+puts ages.take(4)
