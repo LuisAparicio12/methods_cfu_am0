@@ -39,35 +39,40 @@ puts felipes_greeting
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # Bonus: Print a sentence that interpolates the return value of your square method.
+def square(num1, num2)
+    num1 * num2
+end
+puts square(4, 3)
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
-# What data type was your argument(s)?
+
+# What is the return value of your method? 12
+# How many arguments did you pass your method? 2
+# What data type was your argument(s)? integer and the return was the square of that integer
 
 
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
-# def check_stock(quantity, item)
-#     if quantity == 0 
-#        puts "#{item} - OUT of stock!"
-#     elsif quantity >= 4
-#         puts "#{item} is stocked"
-#     elsif quantity >= 1 && quantity <=3
-#         puts "#{item} - running LOW"
-#     end
-# end
+def check_stock(quantity, item)
+    if quantity == 0 
+       puts "#{item} - OUT of stock!"
+    elsif quantity >= 4
+        puts "#{item} is stocked"
+    elsif quantity >= 1 && quantity <=3
+        puts "#{item} - running LOW"
+    end
+end
 
-# check_stock(4, "Coffee");
-# # => "Coffee is stocked"
+check_stock(4, "Coffee");
+# => "Coffee is stocked"
 
-# check_stock(3, "Tortillas");
-# # => "Tortillas - running LOW"
+check_stock(3, "Tortillas");
+# => "Tortillas - running LOW"
 
-# check_stock(0, "Cheese");
-# # => "Cheese - OUT of stock!"
+check_stock(0, "Cheese");
+# => "Cheese - OUT of stock!"
 
-# check_stock(1, "Salsa");
-# => "Salsa - running LOW"
+check_stock(1, "Salsa");
+=> "Salsa - running LOW"
 # if the quantaty is 0 then is out of stock
 # if the quantity is 4 or more then the item is on stock
 # between 1 and 3 the item is running low
